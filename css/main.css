@@ -139,6 +139,14 @@ p {
   line-height: 1.285;
 }
 
+img {
+  width: 100%;
+}
+
+figure {
+  margin: 0;
+}
+
 address {
  font-style: normal;
 }
@@ -165,6 +173,14 @@ header {
 
 header .content-wrapper {
   margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+header figure {
+  width: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -241,6 +257,10 @@ footer .copyright {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: url('../img/hero.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
 }
 
 .hero-area h1 {
@@ -292,6 +312,8 @@ input[type=button] {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: url('../img/background.jpg') center no-repeat;
+  background-size: cover;
 }
 
 .features h2 {
@@ -526,6 +548,9 @@ input[type=button] {
     display: none;
   }
   /* Hero Area */
+  .hero-area {
+    min-height: 600px;
+  }
 
   .hero-area h1 {
     font-size: 3em;
@@ -691,8 +716,13 @@ header {
 }
 
 /* Hero Area*/
+
+.hero-area {
+  min-height: 775px;
+}
+
 .hero-area h1 {
-  width: 60%;
+  width: 80%;
   font-size: 3.75em;
 }
 

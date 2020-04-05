@@ -635,7 +635,7 @@ input[type=button] {
   .reviews h2 {
     width: 85%;
   }
-
+  .reviews article figure,
   .reviews article div {
     width: 49%;
   }
